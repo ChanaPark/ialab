@@ -1,0 +1,64 @@
+title = "정보보증 연구실"
+baseURL = ""
+theme = "ananke"
+resourceDir = "../resources"
+
+defaultContentLanguage = "en"
+sectionPagesMenu = "main"
+enableRobotsTXT = true
+
+[menu]
+  [[menu.main]]
+    identifier = "Home"
+    name = "Home"
+    url = "/"
+    weight = 1
+    
+    [[menu.main]]
+    identifier = "Professor"
+    name = "Professor"
+    url = "/Professor"
+    weight = 2
+
+    [[menu.main]]
+    identifier = "Members"
+    name = "Members"
+    url = "/Members"
+    weight = 3
+
+    [[menu.main]]
+    identifier = "Research"
+    name = "Research"
+    url = "/Research"
+    weight = 4
+
+
+
+
+[services.googleAnalytics]
+id = ''
+
+[pagination]
+pagerSize = 3 # this is set low for demonstrating with dummy content. Set to a higher number
+
+
+[sitemap]
+changefreq = "monthly"
+priority = 0.5
+filename = "sitemap.xml"
+
+[params]
+mainSections = ["post"]
+text_color = ""
+author = "Victor Hugo" # default author, override via `author` in a posts front matter
+favicon = ""
+site_logo = ""
+description = "The last theme you'll ever need. Maybe."
+# choose a background color from any on this page: https://tachyons.io/docs/themes/skins/ and preface it with "bg-"
+background_color_class = "bg-black"
+# choose fitting and alignment styles for the featured image using Tachyons classes such as "cover|contain" for fitting and "bg-top|bg-center|bg-bottom" for alignment, or add any other class space-separated to customize further
+featured_image_class = "cover bg-top"
+# choose a color dimming class for the page or site header from any on this page: https://tachyons.io/docs/themes/skins/, preface it with "bg-" and add the value such as "-X0" where X is in [1,9]
+cover_dimming_class = "bg-black-60"
+recent_posts_number = 3
+
